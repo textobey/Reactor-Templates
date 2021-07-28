@@ -18,7 +18,7 @@ class ___VARIABLE_sceneName___ViewController: UIBaseViewController, Stepper {
     var steps = PublishRelay<Step>()
     
     // MARK: - Reactor
-    private let = ___VARIABLE_sceneName___Reactor()
+    private let reactor = ___VARIABLE_sceneName___ViewReactor()
     
     // MARK: - View
     lazy var subView = ___VARIABLE_sceneName___View()

@@ -52,4 +52,10 @@ extension ___VARIABLE_sceneName___View: View {
         // Bind value from UI
         bindState(reactor: reactor)
     }
+    
+    private func bindAction(reactor: ___VARIABLE_sceneName___ViewReactor) {
+    }
+    
+    private func bindState(reactor: ___VARIABLE_sceneName___ViewReactor) {
+    }
 }
