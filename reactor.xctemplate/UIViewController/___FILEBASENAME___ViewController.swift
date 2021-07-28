@@ -11,13 +11,27 @@ import RxSwift
 import RxCocoa
 import SnapKit
 import Then
+import ReactorKit
 
 class ___VARIABLE_sceneName___ViewController: UIBaseViewController, Stepper {
     // Stepper
     var steps = PublishRelay<Step>()
     
+    // MARK: - Reactor
+    private let = ___VARIABLE_sceneName___Reactor()
+    
     // MARK: - View
     lazy var subView = ___VARIABLE_sceneName___View()
+    
+    override init() {
+        // Apply reactor injection to the subview without forgetting.
+        defer { self.subView.reactor = reactor }
+        super.init()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - Lifecycle
     override func viewDidLoad() {

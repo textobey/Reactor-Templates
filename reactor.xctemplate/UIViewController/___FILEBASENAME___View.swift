@@ -12,12 +12,12 @@ import RxSwift
 import RxCocoa
 import ReactorKit
 
-class ___VARIABLE_sceneName___View: UIView {
+class ___VARIABLE_sceneName___View: UIBaseView {
     var disposeBag = DisposeBag()
     
     // MARK: - init
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(navigationType: NavigationConfigType = .back) {
+        super.init(navigationType: navigationType)
         setupLayout()
     }
     
@@ -46,10 +46,10 @@ extension ___VARIABLE_sceneName___View: View {
     func bind(reactor: ___VARIABLE_sceneName___ViewReactor) {
         // Action
         // Bind to reactor.action
-        // ...
+        bindAction(reactor: reactor)
         
         // State
         // Bind value from UI
-        // ...
+        bindState(reactor: reactor)
     }
 }
